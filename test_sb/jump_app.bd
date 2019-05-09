@@ -1,0 +1,27 @@
+# The source block assign file name to identifiers
+
+sources {
+
+myBootImageFile = "led_blinky.bin";
+
+}
+
+ 
+
+# The section block specifies the sequence of boot commands to be written to the SB file
+
+section (0) {
+
+
+
+#1. Program Boot_ Image
+
+load myBootImageFile > 0x20010000;
+
+#2. execute application
+
+jump 0x20010d81;
+
+ 
+
+}

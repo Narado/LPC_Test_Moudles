@@ -1,0 +1,2 @@
+ÓÒ¼ü¿Õ°×´¦£¬gitbash here£¬ÊäÈëÃüÁîÓï¾ä
+./bin2hex_v2.pl input_file output_file format [offset] [swap_start, swap_end]

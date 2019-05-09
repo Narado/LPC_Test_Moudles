@@ -1,0 +1,25 @@
+# The source block assign file name to identifiers
+
+sources {
+
+myImageFile = "load_1kb.bin";
+
+}
+
+ 
+
+# The section block specifies the sequence of boot commands to be written to the SB file
+
+section (0) {
+
+#1. Configure spifi
+load 0xc0000005> 0x2000b000;
+enable @0xa 0x2000b000;
+
+#2. Program Boot_ Image
+
+load myImageFile > 0x10000000;
+
+
+
+}

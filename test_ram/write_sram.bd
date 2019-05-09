@@ -1,0 +1,27 @@
+
+sources {
+   myfile1="0x30000.bin";
+  //myfile2="0x6400.bin";
+  // myfile2="0x5BA8.bin";
+   myfile2="0xD5FC.bin";
+   myfile3="0x8000.bin";
+
+
+}
+
+ 
+
+
+
+section (0) {
+   load myfile1>  0x0;
+  // load myfile2> 0x20009c00;
+ //load myfile2> 0x2000a458;
+ load myfile2> 0x2000aa04;
+   load myfile3> 0x20010000;
+   load myfile3> 0x20018000;
+   load myfile3> 0x20020000;
+
+
+
+}

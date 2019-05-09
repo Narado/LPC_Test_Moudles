@@ -1,0 +1,25 @@
+
+sources {
+   myfile1="0x30000.bin";
+  myfile2="0x55FC_MDK.bin";
+  // myfile2="0x5998_IAR.bin";
+   myfile3="0x8000.bin";
+
+
+}
+
+ 
+
+
+
+section (0) {
+   load myfile1>  0x0;
+  
+ load myfile2> 0x2000aa04;
+  load myfile3> 0x20010000;
+   load myfile3> 0x20018000;
+   load myfile3> 0x20020000;
+
+
+
+}
